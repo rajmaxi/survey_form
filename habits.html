@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="personal__form">
+            <div class="personal__item">
+                <div class="habits__img"></div>
+                <div class="personal_details">
+                    <h1>Habits</h1>
+                    <img src="images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="personal_data">
+                <div class="main">
+                    <form id="survey-form" class="survey-form">
+                       <div class="survey-form__group">
+                          <p class="survey-form__statement">Do you smoke?</p>
+                          <select id="dropdown" name="favorite" class="survey-form__control">
+                             <option disabled selected value="none">Select an option</option>
+                             <option value="yes">Yes</option>
+                             <option value="no">No</option>
+                          </select>
+                       </div>
+                       <div class="survey-form__group">
+                          <p class="survey-form__statement">Do you consume alcohol?</p>
+                          <select id="dropdown" name="favorite" class="survey-form__control">
+                             <option disabled selected value="none">Select an option</option>
+                             <option value="yes">Yes</option>
+                             <option value="no">No</option>
+                          </select>
+                       </div>
+                       <div class="survey-form__group">
+                            <p class="survey-form__statement">How much time do you sleep?</p>
+                            <select id="dropdown" name="favorite" class="survey-form__control">
+                            <option disabled selected value="none">Select an option</option>
+                            <option value="8hours">8 hours</option>
+                            <option value="12hours">12 hours</option>
+                            </select>
+                        </div>
+                       <div class="survey-form__group">
+                            <p class="survey-form__statement">Are you</p>
+                            <div class="survey-form__radio-container">
+                            <input name="general" id="vegan" value="vegan" type="radio" class="survey-form__input-radio" checked /><label for="vegan">Vegan</label>
+                            </div>
+                            <div class="survey-form__radio-container">
+                            <input name="general" id="vegetarian" value="vegetarian" type="radio" class="survey-form__input-radio" /><label for="vegetarian">Vegetarian</label>
+                            </div>
+                            <div class="survey-form__radio-container">
+                            <input name="general" id="non_vegetarian" value="Non Vegetarian" type="radio" class="survey-form__input-radio" /><label for="non_vegetarian">Non Vegetarian</label>
+                            </div>
+                        </div>
+                       <div class="survey-form__group survey__title__health">
+                          <button type="button" id="submit" class="survey-form__submit-button">
+                            <a type="button" href="morbidies.html">
+                                <img src="images/right-arrow.png" alt="arrow">
+                            </a>
+                          </button>
+                       </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

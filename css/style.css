@@ -89,7 +89,7 @@ a:focus {
 
 /* Layout Styles */
 
-.wrapper{
+.wrapper, .thanks_wrapper{
     height: 100%;
     max-width: 1280px;
     margin: auto;
@@ -103,13 +103,21 @@ a:focus {
 }
 
 .survey_ban_item {
-    background: url(../images/banner_img.png) no-repeat;
-    background-size: cover;
-    max-height: 420px;
-    height: 100%;
-    background-position: bottom;
-    position: relative;
-    opacity: 0.6;
+  background: url(../images/banner_img.png) no-repeat;
+  max-height: 420px;
+  height: 100%;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  opacity: 0.6;
+}
+
+.thanks_ban_item {
+  background: url(../images/thanks.png) no-repeat;
+  max-height: 100%;
+  height: 100%;
+  background-position: left;
+  position: relative;
 }
 
 .survey__title {
@@ -119,8 +127,40 @@ a:focus {
     max-width: 500px;
 }
 
-.survey__title h1{
-    font: Bold 67px/80px Source Sans Pro;
+.thanks__title {
+  max-width: 500px;
+  height: 100%;
+  text-align: center;
+  float: right;
+  display: table;
+  width: 100%;
+}
+
+.thanks__title h1 {
+  margin-bottom: 150px;
+  font: Bold 45px/55px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+.thanks_ban_center {
+  display: table-cell;
+  vertical-align: middle;
+  max-width: 350px;
+  position: relative;
+}
+
+.thanks_ban_center:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.survey__title h1 {
+    font: Bold 55px/70px Source Sans Pro;
     letter-spacing: 0px;
     color: #FFFFFF;
 }
@@ -181,10 +221,14 @@ a:focus {
     background: url(../images/morbidies.png) no-repeat;
 }
 
-.symptoms__img{
+.symptoms__img {
     background: url(../images/symptoms.png) no-repeat;
 }
-.personal__img , .morbodies__img, .symptoms__img{ 
+
+.habits__img {
+  background: url(../images/habits.png) no-repeat;
+}
+.personal__img , .morbodies__img, .symptoms__img, .habits__img{ 
     background-size: cover;
     max-height: 100%;
     height: 100%;
@@ -209,7 +253,7 @@ a:focus {
     position: absolute;
     top: 5%;
     left: 25%;
-    font: Bold 50px/45px Source Sans Pro;
+    font: Bold 40px/35px Source Sans Pro;
     letter-spacing: 1px;
     color: #ffffff;
     text-transform: uppercase;
@@ -221,7 +265,7 @@ a:focus {
 .personal_details img {
     position: absolute;
     right: 15%;
-    bottom: 5%;
+    bottom: 10%;
     z-index: 3;
 }
 
@@ -246,7 +290,7 @@ a:focus {
   .survey-form__radio-container {
     margin-bottom: 20px;
     display: inline-block;
-    width: 100px;
+    width: 150px;
   }
   .co__morbidies .survey-form__radio-container {
       display: block;
@@ -350,7 +394,6 @@ a:focus {
     height: 50px;
   }
   input[type="text"]:-webkit-autofill,
-  input[type="email"]:-webkit-autofill,
   input[type="number"]:-webkit-autofill,
   select:-webkit-autofill,
   textarea:-webkit-autofill {
@@ -359,35 +402,31 @@ a:focus {
     box-shadow: 0 0 0px 1000px #fff inset ;
   }
   input[type="text"]::-webkit-input-placeholder,
-  input[type="email"]::-webkit-input-placeholder,
   input[type="number"]::-webkit-input-placeholder,
   select::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
     color: #9f6b57;
   }
   input[type="text"]:-ms-input-placeholder,
-  input[type="email"]:-ms-input-placeholder,
   input[type="number"]:-ms-input-placeholder,
   select:-ms-input-placeholder,
   textarea:-ms-input-placeholder {
     color: #9f6b57;
   }
   input[type="text"]::placeholder,
-  input[type="email"]::placeholder,
   input[type="number"]::placeholder,
   select::placeholder,
   textarea::placeholder {
     color: #9f6b57;
   }
   input[type="text"]:focus,
-  input[type="email"]:focus,
   input[type="number"]:focus,
   select:focus,
   textarea:focus {
     border-color: #11111d;
   }
   
-  select {
+  select, option{
     cursor: pointer;
   }
   
@@ -430,9 +469,29 @@ a:focus {
     margin: 50px 0 20px;
 }
 
-@media (max-width: 1080px) {
-    .personal__img, .morbodies__img{
-        max-width: 425px;
+
+/* =======================
+   Reponsive Styles  
+   ========================  */
+
+@media (min-width: 1200px) {
+  .wrapper, .morbodies__img, .personal__img, .symptoms__img{ 
+    max-width: 100%;
+    margin: auto;
+  }
+  .personal__item, .personal_data{
+    flex-basis: 48%;
+    max-width: 48%;
+    margin-right: 2%;
+  }
+}
+@media (max-width: 1199px) {
+    .personal__img, .morbodies__img, .symptoms__img{
+        max-width: 500px;
+    }
+    .main{ 
+      max-width: 65%;
+      margin: 10% auto;
     }
 }
 
@@ -447,7 +506,7 @@ a:focus {
     .personal__item {
         height: 700px;
     }
-    .personal__img, .morbodies__img{ 
+    .personal__img, .morbodies__img, .symptoms__img{ 
         max-width: 100%;
     }
     .main {
@@ -458,12 +517,42 @@ a:focus {
 
 }
 
+@media (max-width: 768px) {
+  .survey__title__health{
+      margin-right: 0px;
+  }
+  .survey__title h1, .survey__title__health h3 {
+      font: Bold 35px/45px Source Sans Pro;
+  }
+}
+
 @media (max-width: 567px) {
-    .main {
-        max-width: 400px;
-        margin: auto;
-        margin-top: 50px;
-    }
+  .survey__title{
+    left: 37.3%;
+    top: 25%;
+    transform: translate(-25%, -37.3%);
+  }
+  .survey__title img{
+    margin: auto;
+    display: block;
+  }
+  .survey__title h1{
+    max-width: 300px;
+  }
+  .survey__title__health{
+    text-align: center;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 50px auto;
+  }
+  .main {
+      max-width: 400px;
+      margin: auto;
+      margin-top: 50px;
+  }
+  .survey-form__radio-container{
+    width: 80px;
+  }
 }
 
 @media (max-width: 414px) {
