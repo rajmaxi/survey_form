@@ -270,7 +270,7 @@ a:focus {
 }
 
 .survey-form__statement {
-    margin-bottom: 4px;
+    margin-bottom: 12px;
     letter-spacing: 0px;
     color: #0B0A16;
     font-size: 18px;
@@ -288,18 +288,29 @@ a:focus {
     font-size: 14px;
   }
   .survey-form__radio-container {
-    margin-bottom: 20px;
-    display: inline-block;
+    margin-bottom: 10px;
+    display: flex;
     width: 150px;
   }
+  .survey-form__radio-container input {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-right: 5px;
+    margin-top: 2px;
+}
   .co__morbidies .survey-form__radio-container {
       display: block;
       width: auto;
   }
   .survey-form__radio-container label {
     position: relative;
+    font-size: 16px;
+    vertical-align: top;
+    margin-left: 6px;
   }
-  .survey-form__radio-container label:before {
+  /* .survey-form__radio-container label:before {
     content: "";
     width: 20px;
     height: 20px;
@@ -321,7 +332,7 @@ a:focus {
     border-radius: 50%;
     top: 9px;
     left: 4px;
-  }
+  } */
   .survey-form__checkbox-container {
     margin-bottom: 16px;
   }
@@ -387,11 +398,11 @@ a:focus {
     margin-top: 8px;
     color: #0B0A16;
     padding: 5px 0px;
-    border-bottom: 1px solid #0B0A16;
+    border-bottom: 1px solid #27252545;
   }
   select, textarea{
     border: 1px solid #27252545;
-    height: 50px;
+    height: 40px;
   }
   input[type="text"]:-webkit-autofill,
   input[type="number"]:-webkit-autofill,
@@ -437,12 +448,12 @@ a:focus {
     min-height: 80px;
   }
   
-  label {
+  /* label {
     display: block;
-  }
+  } */
   
-  input[type="checkbox"],
-  input[type="radio"] {
+  input[type="checkbox"]
+  /* input[type="radio"]*/ { 
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -466,7 +477,9 @@ a:focus {
 }
 
 .main{
-    margin: 50px 0 20px;
+    margin: 50px auto 20px;
+    max-width: 550px;
+    width: 100%;
 }
 
 
