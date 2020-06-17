@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="personal__form co__morbidies">
+            <div class="personal__item">
+                <div class="symptoms__img"></div>
+                <div class="personal_details">
+                    <h1>Symptoms</h1>
+                    <img src="images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="personal_data">
+                <div class="main">
+                    <form id="survey-form" class="survey-form">
+                       <p class="survey-form__statement font_italic">Are you experiencing any of the following symptoms ?</p>
+                       <div class="survey-form__group">
+                          <p class="survey-form__statement">Fever</p>
+                          <div class="survey-form__radio-container">
+                             <input name="fever__true" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                          </div>
+                          <div class="survey-form__radio-container">
+                             <input name="fever__false" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                          </div>
+                       </div>
+                       <div class="survey-form__group">
+                        <p class="survey-form__statement">Dry Cough</p>
+                        <div class="survey-form__radio-container">
+                           <input name="dry_true" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="dry_false" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Productive (Wet) Cough</p>
+                        <div class="survey-form__radio-container">
+                           <input name="cough_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="cough_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Throat Pain</p>
+                        <div class="survey-form__radio-container">
+                           <input name="throat_yes"  type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="throat_no"  type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Shortness of Breath</p>
+                        <div class="survey-form__radio-container">
+                           <input name="breath_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="breath_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Fatigue</p>
+                        <div class="survey-form__radio-container">
+                           <input name="fatigue_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="fatigue_no"  type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Headache</p>
+                        <div class="survey-form__radio-container">
+                           <input name="headache_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="headache_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Nausea / Vomiting</p>
+                        <div class="survey-form__radio-container">
+                           <input name="nausea_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="nausea_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Nasal (Nose) Congestion</p>
+                        <div class="survey-form__radio-container">
+                           <input name="nasal_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="nasal_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Diarrhoea</p>
+                        <div class="survey-form__radio-container">
+                           <input name="diarrhoea_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="diarrhoea_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Chills (Shivering)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="chills_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="chills_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Muscle Pain & Joint Pain</p>
+                        <div class="survey-form__radio-container">
+                           <input name="muscle_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="muscle_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Conjunctivitis (Redness / Eye Irritation)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="conjunctivitis_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="conjunctivitis_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Haemoptysis (Blood in sputum (Saliva))</p>
+                        <div class="survey-form__radio-container">
+                           <input name="haemoptysis_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="haemoptysis_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Chills (Shivering)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="chills_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="chills_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Loss of Taste</p>
+                        <div class="survey-form__radio-container">
+                           <input name="loss_of_taste_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="loss_of_test_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Throat Congestion</p>
+                        <div class="survey-form__radio-container">
+                           <input name="throat_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="throat_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Tonsil Swelling</p>
+                        <div class="survey-form__radio-container">
+                           <input name="tonsil_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="tonsil_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Enlargement of Nodes (Swellings in neck area)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="swelling_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="swelling_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Enlargement of Nodes (Swellings in neck area)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="swelling_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="swelling_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Rash</p>
+                        <div class="survey-form__radio-container">
+                           <input name="rash_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="rash_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Have you ever been unconscious in recent times</p>
+                        <div class="survey-form__radio-container">
+                           <input name="unconscious_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="unconscious_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Have you come in contact with any COVID-19 patient</p>
+                        <div class="survey-form__radio-container">
+                           <input name="covid19_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="covid19_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                       
+                       <div class="survey-form__group survey__title__health">
+                          <button type="submit" id="submit" class="survey-form__submit-button">
+                            <a type="button" href="symptoms.html">
+                                <img src="images/right-arrow.png" alt="arrow">
+                            </a>
+                          </button>
+                       </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

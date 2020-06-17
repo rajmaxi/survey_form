@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="personal__form co__morbidies">
+            <div class="personal__item">
+                <div class="morbodies__img"></div>
+                <div class="personal_details">
+                    <h1>Co-Morbidies</h1>
+                    <img src="images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="personal_data">
+                <div class="main">
+                    <form id="survey-form" class="survey-form">
+                       <p class="survey-form__statement font_italic">Do you have any of these conditions ?</p>
+                       <div class="survey-form__group">
+                          <p class="survey-form__statement">Hypertension (BP)</p>
+                          <div class="survey-form__radio-container">
+                             <input name="hyper__true" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                          </div>
+                          <div class="survey-form__radio-container">
+                             <input name="hyper__false" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                          </div>
+                       </div>
+                       <div class="survey-form__group">
+                        <p class="survey-form__statement">Diabets (Sugar)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="diabets_true" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="diabets_false" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Servere Obesity</p>
+                        <div class="survey-form__radio-container">
+                           <input name="severe_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="severe_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Cardiovascular Diseases(Heart Conditions) (Bp)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="cardiovascular_yes"  type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="cardiovascular_no"  type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Respiratory / Lung Disorders (Asthma / COPD)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="respiratory_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="respiratory_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Liver Disease</p>
+                        <div class="survey-form__radio-container">
+                           <input name="liver_disease_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="liver_disease_no"  type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Kidney or Renal Disorder</p>
+                        <div class="survey-form__radio-container">
+                           <input name="kidney_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="kidney_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Cerebro Vascular or Neurological Problem</p>
+                        <div class="survey-form__radio-container">
+                           <input name="cerebro_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="cerebro_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Psychological problem (Depression / Anxiety)</p>
+                        <div class="survey-form__radio-container">
+                           <input name="psychological_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="psychological_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">OTHER IMMUNO COMPROMISED CONDITIONS ( CROHNS DISEASE /LUPUS / PSORIASIS / HIV /AIDS /ORGAN TRANSPLANT RECIPIENTS / ANY OTHER AUTO IMMUNE DISEASES )</p>
+                        <div class="survey-form__radio-container">
+                           <input name="immuno_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="immuno_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Anemia</p>
+                        <div class="survey-form__radio-container">
+                           <input name="anemia_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="anemia_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Thyroid</p>
+                        <div class="survey-form__radio-container">
+                           <input name="thyroid_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="thyroid_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                     <div class="survey-form__group">
+                        <p class="survey-form__statement">Pregnancy</p>
+                        <div class="survey-form__radio-container">
+                           <input name="pregnancy_yes" type="radio" class="survey-form__input-radio" checked /><label for="yes">Yes</label>
+                        </div>
+                        <div class="survey-form__radio-container">
+                           <input name="pregnancy_no" type="radio" class="survey-form__input-radio" /><label for="no">No</label>
+                        </div>
+                     </div>
+                       
+                       <div class="survey-form__group survey__title__health">
+                          <button type="submit" id="submit" class="survey-form__submit-button">
+                            <a type="button" href="symptoms.html">
+                                <img src="images/right-arrow.png" alt="arrow">
+                            </a>
+                          </button>
+                       </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

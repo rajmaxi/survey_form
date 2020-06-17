@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="personal__form">
+            <div class="personal__item">
+                <div class="personal__img"></div>
+                <div class="personal_details">
+                    <h1>Personal Details</h1>
+                    <img src="images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="personal_data">
+                <div class="main">
+                    <form id="survey-form" class="survey-form">
+                       <div class="survey-form__group survey-form__group--name">
+                          <label id="name-label" for="name" class="survey-form__statement">Name</label>
+                          <input type="text" name="name" id="name" class="survey-form__control"/>
+                       </div>
+                       <div class="survey-form__group survey-form__group--age">
+                          <label id="number-label" for="number" class="survey-form__statement">Age</label>
+                          <input type="number" name="age" id="number" min="10" max="99" class="survey-form__control" />
+                       </div>
+                       <div class="survey-form__group">
+                          <p class="survey-form__statement">Gender</p>
+                          <div class="survey-form__radio-container">
+                             <input name="user-recommend" id="male" value="Male" type="radio" class="survey-form__input-radio" checked /><label for="male">Male</label>
+                          </div>
+                          <div class="survey-form__radio-container">
+                             <input name="user-recommend" id="female" value="Female" type="radio" class="survey-form__input-radio" /><label for="female">Female</label>
+                          </div>
+                          <div class="survey-form__radio-container">
+                             <input name="user-recommend" id="others" value="others" type="radio" class="survey-form__input-radio" /><label for="others">Others</label>
+                          </div>
+                       </div>
+                       <div class="survey-form__group">
+                          <p class="survey-form__statement">Gen</p>
+                          <select id="dropdown" name="favorite" class="survey-form__control">
+                             <option disabled selected value="none">Select an option</option>
+                             <option value="test">test</option>
+                             <option value="test1">test1</option>
+                             <option value="test2">test2</option>
+                          </select>
+                       </div>
+                       <div class="survey-form__group">
+                          <p class="survey-form__statement">Gen</p>
+                          <select id="dropdown" name="favorite" class="survey-form__control">
+                             <option disabled selected value="none">Select an option</option>
+                             <option value="test">test</option>
+                             <option value="test1">test1</option>
+                             <option value="test2">test2</option>
+                          </select>
+                       </div>
+                       <div class="survey-form__group survey-form__group--name">
+                          <label id="phone-label" for="phone" class="survey-form__statement">Phone Number</label>
+                          <input type="text" name="phone" id="phone" class="survey-form__control" />
+                       </div>
+                       <div class="survey-form__group survey-form__group--name">
+                        <label id="alterphone-label" for="alterphone" class="survey-form__statement">Alternate Phone Number</label>
+                        <input type="text" name="alterphone" id="alterphone" class="survey-form__control" />
+                     </div>
+                       <div class="survey-form__group survey__title__health">
+                          <button type="submit" id="submit" class="survey-form__submit-button">
+                            <a type="button" href="morbidies.html">
+                                <img src="images/right-arrow.png" alt="arrow">
+                            </a>
+                          </button>
+                       </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

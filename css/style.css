@@ -1,0 +1,474 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/source-sans-pro-v13-latin-700.eot');
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), 
+    url('../fonts/source-sans-pro-v13-latin-700.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/source-sans-pro-v13-latin-700.woff2') format('woff2'), 
+    url('../fonts/source-sans-pro-v13-latin-700.woff') format('woff'), 
+    url('../fonts/source-sans-pro-v13-latin-700.ttf') format('truetype'), 
+    url('../fonts/source-sans-pro-v13-latin-700.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+	font-family: 'Segoe UI Regular';
+	font-style: normal;
+	font-weight: normal;;
+    src: local('Segoe UI Regular'), local('Segoe UI Regular'),  
+    url('../fonts/Segoe UI.woff') format('woff'), 
+}
+
+@font-face {
+	font-family: 'Segoe UI Italic';
+	font-style: normal;
+	font-weight: normal;;
+    src: local('Segoe UI Italic'), local('Segoe UI Italic'),  
+    url('../fonts/Segoe UI Italic.woff') format('woff'), 
+}
+
+/* ==============
+   Global Styles
+   ============= */
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0
+}
+body {
+	font-size: 0.875rem;
+	line-height: 1.4;
+	font-family: 'Segoe UI Regular';
+    color:#0B0A16;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:#0B0A16;
+}
+p {
+	margin-bottom: 25px
+}
+label {
+	font-weight: 400;
+	margin-bottom: 3px;
+	color:#0B0A16;
+}
+ul,
+ol {
+	list-style: none;
+	margin: 0 0 25px 0;
+	padding: 0
+}
+a {
+	color:#0B0A16;
+	text-decoration: none;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	outline: none
+}
+a:hover,
+a:focus {
+	color:#0B0A16;
+	text-decoration: none;
+	outline: none
+}
+
+/* Layout Styles */
+
+.wrapper{
+    height: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.survey__ban{
+    background: transparent linear-gradient(235deg, #2B2E52 0%, #090910 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.survey_ban_item {
+    background: url(../images/banner_img.png) no-repeat;
+    background-size: cover;
+    max-height: 420px;
+    height: 100%;
+    background-position: bottom;
+    position: relative;
+    opacity: 0.6;
+}
+
+.survey__title {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    max-width: 500px;
+}
+
+.survey__title h1{
+    font: Bold 67px/80px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.survey__title__health {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-flex-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.survey__title__health h3 {
+    font: Bold 46px/58px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    max-width: 400px;
+}
+
+.survey__title__health button {
+    background: #625FF1;
+    border-radius: 50%;
+    border: 1px solid #625ff1;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+.survey__title__health button a{
+    display: block;
+}
+
+.personal__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    position: relative;
+}
+
+.personal__item , .personal_data {
+    flex-basis: 50%;
+    max-width: 50%;
+    position: relative;
+}
+
+.personal__img {
+    background: url(../images/profile.png) no-repeat;
+}
+
+.morbodies__img {
+    background: url(../images/morbidies.png) no-repeat;
+}
+
+.symptoms__img{
+    background: url(../images/symptoms.png) no-repeat;
+}
+.personal__img , .morbodies__img, .symptoms__img{ 
+    background-size: cover;
+    max-height: 100%;
+    height: 100%;
+    background-position: center;
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+
+.personal__img::after, .morbodies__img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.65);
+    z-index: 2;
+}
+
+.personal_details h1{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    font: Bold 50px/45px Source Sans Pro;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 300px;
+    z-index: 3;
+    opacity: 1;
+}
+
+.personal_details img {
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    z-index: 3;
+}
+
+.survey-form__statement {
+    margin-bottom: 4px;
+    letter-spacing: 0px;
+    color: #0B0A16;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: 'Segoe UI Italic';
+    margin-top: 10px;
+  }
+  .font_italic{
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  .survey-form__clue {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .survey-form__radio-container {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100px;
+  }
+  .co__morbidies .survey-form__radio-container {
+      display: block;
+      width: auto;
+  }
+  .survey-form__radio-container label {
+    position: relative;
+  }
+  .survey-form__radio-container label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: solid 1px #212043;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+  }
+  .survey-form__radio-container input:checked ~ label:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color:#212043;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+    left: 4px;
+  }
+  .survey-form__checkbox-container {
+    margin-bottom: 16px;
+  }
+  .survey-form__checkbox-container:first-of-type {
+    margin-top: 4px;
+  }
+  .survey-form__checkbox-container:last-child {
+    margin-bottom: 32px;
+  }
+  .survey-form__checkbox-container label {
+    position: relative;
+  }
+  .survey-form__checkbox-container label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: solid 1px #88472e;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+  }
+  .survey-form__checkbox-container input:checked ~ label:before {
+    background-color: #88472e;
+  }
+  .survey-form__checkbox-container input:checked ~ label span:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 2px;
+    height: 7px;
+    transform: rotate(-45deg);
+    top: 15px;
+    left: 6px;
+  }
+  .survey-form__checkbox-container input:checked ~ label span:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    transform: rotate(45deg);
+    top: 9px;
+    left: 12px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    font-family: 'Segoe UI Regular';
+    outline: 0px;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0 !important;
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: #fff;
+    border: 0;
+    margin-top: 8px;
+    color: #0B0A16;
+    padding: 5px 0px;
+    border-bottom: 1px solid #0B0A16;
+  }
+  select, textarea{
+    border: 1px solid #27252545;
+    height: 50px;
+  }
+  input[type="text"]:-webkit-autofill,
+  input[type="email"]:-webkit-autofill,
+  input[type="number"]:-webkit-autofill,
+  select:-webkit-autofill,
+  textarea:-webkit-autofill {
+    -webkit-text-fill-color: #88472e;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  }
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  input[type="number"]::-webkit-input-placeholder,
+  select::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #9f6b57;
+  }
+  input[type="text"]:-ms-input-placeholder,
+  input[type="email"]:-ms-input-placeholder,
+  input[type="number"]:-ms-input-placeholder,
+  select:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #9f6b57;
+  }
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="number"]::placeholder,
+  select::placeholder,
+  textarea::placeholder {
+    color: #9f6b57;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #11111d;
+  }
+  
+  select {
+    cursor: pointer;
+  }
+  
+  textarea {
+    font-family: sans-serif;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 80px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .survey-form__group.survey__title__health {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.survey-form__group.survey__title__health button {
+    width: 60px;
+    height: 60px;
+}
+
+.survey-form__group.survey__title__health button img{
+    width: 30px;
+    height: 30px;
+}
+
+.main{
+    margin: 50px 0 20px;
+}
+
+@media (max-width: 1080px) {
+    .personal__img, .morbodies__img{
+        max-width: 425px;
+    }
+}
+
+@media (max-width: 992px) {
+    .personal__item, .personal_data{
+        flex-basis: 100%;
+        max-width: 100%; 
+    }
+    .personal__form {
+        flex-direction: column;
+    }
+    .personal__item {
+        height: 700px;
+    }
+    .personal__img, .morbodies__img{ 
+        max-width: 100%;
+    }
+    .main {
+        max-width: 550px;
+        margin: auto;
+        margin-top: 75px;
+    }
+
+}
+
+@media (max-width: 567px) {
+    .main {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 414px) {
+    .main {
+        max-width: 320px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
