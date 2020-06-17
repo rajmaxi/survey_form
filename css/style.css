@@ -356,6 +356,7 @@ a:focus {
   textarea:-webkit-autofill {
     -webkit-text-fill-color: #88472e;
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset ;
   }
   input[type="text"]::-webkit-input-placeholder,
   input[type="email"]::-webkit-input-placeholder,
