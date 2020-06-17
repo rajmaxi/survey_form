@@ -238,7 +238,7 @@ a:focus {
     margin: auto;
 }
 
-.personal__img::after, .morbodies__img::after{
+.personal__img::after, .morbodies__img::after, .symptoms__img::after{
     content: "";
     position: absolute;
     top: 0;
