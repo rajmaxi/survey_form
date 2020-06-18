@@ -3,12 +3,28 @@
 	font-style: normal;
 	font-weight: 700;
 	src: url('../fonts/source-sans-pro-v13-latin-700.eot');
-    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), 
-    url('../fonts/source-sans-pro-v13-latin-700.eot?#iefix') format('embedded-opentype'), 
-    url('../fonts/source-sans-pro-v13-latin-700.woff2') format('woff2'), 
-    url('../fonts/source-sans-pro-v13-latin-700.woff') format('woff'), 
-    url('../fonts/source-sans-pro-v13-latin-700.ttf') format('truetype'), 
-    url('../fonts/source-sans-pro-v13-latin-700.svg#SourceSans Pro') format('svg');
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), 
+  url('../fonts/source-sans-pro-v13-latin-700.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/source-sans-pro-v13-latin-700.woff2') format('woff2'), 
+  url('../fonts/source-sans-pro-v13-latin-700.woff') format('woff'), 
+  url('../fonts/source-sans-pro-v13-latin-700.ttf') format('truetype'), 
+  url('../fonts/source-sans-pro-v13-latin-700.svg#SourceSans Pro') format('svg');
+}
+
+@font-face {
+	font-family: 'Roboto,Arial,sans-serif';
+	font-style: normal;
+	font-weight: 700;
+  src: local('Roboto-Regular'), local('Roboto-Regular'), 
+  url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto-Italic';
+	font-style: normal;
+	font-weight: 700;
+  src: local('Roboto-Italic'), local('Roboto-Italic'), 
+  url('../fonts/Roboto-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -16,7 +32,7 @@
 	font-style: normal;
 	font-weight: normal;;
     src: local('Segoe UI Regular'), local('Segoe UI Regular'),  
-    url('../fonts/Segoe UI.woff') format('woff'), 
+    url('../fonts/Segoe UI.woff') format('woff');
 }
 
 @font-face {
@@ -24,7 +40,7 @@
 	font-style: normal;
 	font-weight: normal;;
     src: local('Segoe UI Italic'), local('Segoe UI Italic'),  
-    url('../fonts/Segoe UI Italic.woff') format('woff'), 
+    url('../fonts/Segoe UI Italic.woff') format('woff');
 }
 
 /* ==============
@@ -40,8 +56,8 @@ body {
 body {
 	font-size: 0.875rem;
 	line-height: 1.4;
-	font-family: 'Segoe UI Regular';
-    color:#0B0A16;
+	font-family: 'Roboto,Arial,sans-serif';
+  color:#0B0A16;
 }
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -103,7 +119,7 @@ a:focus {
 }
 
 .survey_ban_item {
-  background: url(../images/banner_img.png) no-repeat;
+  background: url(../images/banner_img.jpg) no-repeat;
   max-height: 420px;
   height: 100%;
   background-position: bottom;
@@ -113,10 +129,11 @@ a:focus {
 }
 
 .thanks_ban_item {
-  background: url(../images/thanks.png) no-repeat;
+  background: url(../images/thanks.jpg) no-repeat;
   max-height: 100%;
   height: 100%;
   background-position: left;
+  background-size: cover;
   position: relative;
 }
 
@@ -214,19 +231,19 @@ a:focus {
 }
 
 .personal__img {
-    background: url(../images/profile.png) no-repeat;
+    background: url(../images/profile.jpg) no-repeat;
 }
 
 .morbodies__img {
-    background: url(../images/morbidies.png) no-repeat;
+    background: url(../images/morbidies.jpg) no-repeat;
 }
 
 .symptoms__img {
-    background: url(../images/symptoms.png) no-repeat;
+    background: url(../images/symptoms.jpg) no-repeat;
 }
 
 .habits__img {
-  background: url(../images/habits.png) no-repeat;
+  background: url(../images/habits.jpg) no-repeat;
 }
 .personal__img , .morbodies__img, .symptoms__img, .habits__img{ 
     background-size: cover;
@@ -276,7 +293,7 @@ a:focus {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Segoe UI Italic';
+    font-family: 'Roboto,Arial,sans-serif';
     margin-top: 10px;
   }
   .font_italic{
@@ -386,7 +403,7 @@ a:focus {
   input[type="number"],
   select,
   textarea {
-    font-family: 'Segoe UI Regular';
+    font-family: 'Roboto,Arial,sans-serif';
     outline: 0px;
     display: block;
     width: 100%;
@@ -442,7 +459,6 @@ a:focus {
   }
   
   textarea {
-    font-family: sans-serif;
     max-width: 100%;
     min-width: 100%;
     min-height: 80px;
@@ -535,7 +551,7 @@ a:focus {
       margin-right: 0px;
   }
   .survey__title h1, .survey__title__health h3 {
-      font: Bold 35px/45px Source Sans Pro;
+      font: Bold 35px/45px Roboto,Arial,sans-serif;
   }
 }
 
@@ -545,18 +561,17 @@ a:focus {
     top: 25%;
     transform: translate(-25%, -37.3%);
   }
-  .survey__title img{
-    margin: auto;
-    display: block;
-  }
   .survey__title h1{
     max-width: 300px;
+  }
+  .survey__title h1, .survey__title__health h3{
+    font: Bold 30px/40px Roboto,Arial,sans-serif;
   }
   .survey__title__health{
     text-align: center;
     flex-direction: column;
     max-width: 300px;
-    margin: 50px auto;
+    margin: 30px auto 0px;
   }
   .main {
       max-width: 400px;
