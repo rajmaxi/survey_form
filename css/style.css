@@ -326,29 +326,6 @@ a:focus {
     vertical-align: top;
     margin-left: 6px;
   }
-  /* .survey-form__radio-container label:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border: solid 1px #212043;
-    display: inline-block;
-    border-radius: 50%;
-    margin-right: 8px;
-    position: relative;
-    top: 5px;
-    cursor: pointer;
-  }
-  .survey-form__radio-container input:checked ~ label:after {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color:#212043;
-    position: absolute;
-    border-radius: 50%;
-    top: 9px;
-    left: 4px;
-  } */
   .survey-form__checkbox-container {
     margin-bottom: 16px;
   }
@@ -402,7 +379,7 @@ a:focus {
   input[type="number"],
   select,
   textarea {
-    font-family: 'Roboto,Arial,sans-serif';
+    font-family: segoe UI;
     outline: 0px;
     display: block;
     width: 100%;
@@ -463,13 +440,8 @@ a:focus {
     min-width: 100%;
     min-height: 80px;
   }
-  
-  /* label {
-    display: block;
-  } */
-  
-  input[type="checkbox"]
-  /* input[type="radio"]*/ { 
+
+  input[type="checkbox"] { 
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -511,16 +483,11 @@ span.survey_sno {
   color: #000000;
 }
 
-
 /* =======================
    Reponsive Styles  
    ========================  */
 
 @media (min-width: 1200px) {
-  /* .wrapper, .morbodies__img, .personal__img, .symptoms__img{ 
-    max-width: 100%;
-    margin: auto;
-  } */
   .personal_details img{
     left: 22%;
   }
@@ -542,6 +509,7 @@ span.survey_sno {
     right: 50px;
   }
 }
+
 @media (max-width: 1199px) {
     .personal__img, .morbodies__img, .symptoms__img{
         max-width: 500px;
