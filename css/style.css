@@ -292,8 +292,12 @@ a:focus {
     font-family: segoe UI;
   }
   .font_italic{
-    font-style: italic;
     margin-bottom: 30px;
+    font: Italic 20px/27px Segoe UI !important;
+    color: #13132D;
+  }
+  .co__morbidies .survey-form__statement {
+    font-size: 16px;
   }
   .survey-form__clue {
     font-weight: 300;
@@ -517,6 +521,9 @@ span.survey_sno {
     max-width: 100%;
     margin: auto;
   } */
+  .personal_details img{
+    left: 22%;
+  }
   .personal__item, .personal_data{
     flex-basis: 48%;
     max-width: 48%;
