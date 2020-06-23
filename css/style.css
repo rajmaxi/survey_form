@@ -98,7 +98,7 @@ a:focus {
 /* Layout Styles */
 
 .wrapper, .thanks_wrapper{
-    height: 100%;
+    height: 800px;
     max-width: 1280px;
     margin: auto;
 }
@@ -106,7 +106,7 @@ a:focus {
 .survey__ban{
     background: transparent linear-gradient(235deg, #2B2E52 0%, #090910 100%) 0% 0% no-repeat padding-box;
     position: relative;
-    height: 100%; 
+    height: 800px;
     overflow: hidden;
 }
 
@@ -117,7 +117,7 @@ a:focus {
   background-position: bottom;
   background-size: cover;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.38;
 }
 
 .thanks_ban_item {
@@ -131,8 +131,8 @@ a:focus {
 
 .survey__title {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 83px;
+    left: 53px;
     max-width: 500px;
 }
 
@@ -169,9 +169,10 @@ a:focus {
 }
 
 .survey__title h1 {
-    font: Bold 55px/70px Source Sans Pro;
+    font: Bold 67px/80px Source Sans Pro;
     letter-spacing: 0px;
     color: #FFFFFF;
+    margin: 5px 0px 5px -5px;
 }
 
 .survey__title__health {
@@ -183,7 +184,7 @@ a:focus {
     -webkit-flex-align: flex-end;
     -ms-flex-align: flex-end;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 125px;
     margin-right: 50px;
 }
 .survey__title__health h3 {
@@ -191,7 +192,8 @@ a:focus {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    max-width: 400px;
+    max-width: 380px;
+    margin: 0;
 }
 
 .survey__title__health button {
@@ -199,11 +201,15 @@ a:focus {
     border-radius: 50%;
     border: 1px solid #625ff1;
     color: #fff;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    margin-left: 85px;
 }
-.survey__title__health button a{
+.survey__title__health button a, .survey__title__health button img {
+    width: 70px;
+	  height: 70px;
     display: block;
+    margin: auto;
 }
 
 .personal__form {
@@ -228,6 +234,7 @@ a:focus {
 
 .morbodies__img {
     background: url(../images/morbidies.jpg) no-repeat;
+    background-position: top right !important;
 }
 
 .symptoms__img {
@@ -241,12 +248,12 @@ a:focus {
     background-size: cover;
     max-height: 100%;
     height: 100%;
-    background-position: center;
+    background-position: top;
     position: fixed;
     max-width: 500px;
     margin: auto;
-    top: 0;
-    left: 8%;
+    top: 1px;
+    left: 3%;
     width: 100%;
 }
 
@@ -257,19 +264,19 @@ a:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0.71);
     z-index: 2;
 }
 
 .personal_details h1{
     position: fixed;
-    top: 10%;
-    left: 13%;
-    font: Bold 40px/35px Source Sans Pro;
+    top: 11%;
+    left: 7%;
+    font: Bold 50px/45px Source Sans Pro;
     letter-spacing: 1px;
     color: #ffffff;
     text-transform: uppercase;
-    max-width: 300px;
+    max-width: 350px;
     z-index: 3;
     opacity: 1;
     margin: 0;
@@ -283,10 +290,10 @@ a:focus {
 }
 
 .survey-form__statement {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     letter-spacing: 0px;
     color: #0B0A16;
-    margin-top: 10px;
+    margin-top: 25px;
     font-size: 1.125rem;
     line-height: 24px;
     font-family: segoe UI;
@@ -403,11 +410,12 @@ a:focus {
   input[type="number"],
   select,
   textarea {
+    max-width: 370px;
     font-family: segoe UI;
     outline: 0px;
     display: block;
     width: 100%;
-    margin: 10px 0 20px 0 !important;
+    margin: 3px 0 20px 0 !important;
     font-size: 16px;
     transition: 0.3s;
     background-color: #fff;
@@ -417,10 +425,14 @@ a:focus {
     padding: 5px 0px;
     border-bottom: 1px solid #43425D;
   }
+  input[type="number"] {
+    margin-top: 12px !important;
+}
+
   select, textarea{
     border: 1px solid #27252545;
     height: 40px;
-    max-width: 180px;
+    max-width: 175px;
   }
   input[type="text"]:-webkit-autofill,
   input[type="number"]:-webkit-autofill,
@@ -457,6 +469,7 @@ a:focus {
   
   select, option{
     cursor: pointer;
+    margin: 25px 0px !important;
   }
 
   input[type="checkbox"] { 
@@ -508,7 +521,7 @@ a:focus {
   form#survey-form {
     max-width: 500px;
     width: 100%;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   span.survey_sno {
@@ -519,18 +532,35 @@ a:focus {
     color: #000000;
   }
 
+  .personal__form__btn button {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .personal__form__btn button a, .personal__form__btn button a img {
+    width: 50px !important;
+    height: 50px !important;
+
+  }
+  .personal__form__btn .survey__title__health {
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+}
 /* =======================
    Reponsive Styles  
    ========================  */
-
-@media (min-width: 1200px) {
+@media (min-width: 1365px) {
   .personal_details img{
     left: 28%;
   }
+}
+@media (min-width: 1200px) {
+  .personal_details img{
+    left: 25%;
+  }
   .personal__item, .personal_data{
-    flex-basis: 48%;
-    max-width: 48%;
-    margin-right: 2%;
+    flex-basis: 47%;
+    max-width: 47%;
+    margin-right: 0%;
   }
 }
 
@@ -608,21 +638,22 @@ a:focus {
 
 @media (max-width: 567px) {
   .survey__title{
-    left: 37.3%;
-    top: 25%;
-    transform: translate(-25%, -37.3%);
+    left: 41.3%;
+    top: 27%;
+    transform: translate(-27%, -41.3%);
   }
   .survey__title h1{
     max-width: 300px;
   }
   .survey__title h1, .survey__title__health h3{
     font: Bold 30px/40px Roboto,Arial,sans-serif;
+    margin-top: 25px;
   }
   .survey__title__health{
     text-align: center;
     flex-direction: column;
     max-width: 300px;
-    margin: 30px auto 0px;
+    margin: 75px auto 0px;
   }
   .main {
       max-width: 400px;
@@ -630,10 +661,22 @@ a:focus {
       margin-top: 50px;
   }
   .survey-form__radio-container{
+    display: inline-block;
     width: 100px;
+    margin: 22px 0 0px;
   }
   span.survey_sno{
     margin-left: -25px;
+  }
+  .survey__title__health button{
+    width: 90px;
+    height: 90px;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .survey__title__health button a , .survey__title__health button img{
+      width: 45px;
+      height: 45px;
   }
 }
 
